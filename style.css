@@ -793,3 +793,118 @@ footer p {
 .footer-mentions:hover {
   text-decoration: underline;
 }
+/* ===== CONTACT ===== */
+.contact-info {
+  padding: 2rem 4rem 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.contact-info h2 {
+  text-align: center;
+  margin: 0;
+}
+
+/* Encart texte centré, taille maîtrisée */
+.contact-info .encart-apropos {
+  max-width: 600px;
+  width: 100%;
+  padding: 2.5rem 3rem;
+  min-height: 0;
+}
+
+.contact-info .encart-apropos p {
+  color: #3a2a0a;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
+  text-align: left;
+}
+
+/* Boutons en ligne centrés */
+.contact-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+/* Chaque encart bouton de taille fixe */
+.contact-actions .encart-categorie {
+  min-width: 140px;
+  text-align: center;
+  padding: 0.6rem 1.5rem;
+}
+
+.contact-btn {
+  text-decoration: none;
+  color: #2D643E;
+  font-family: Figtree, sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== AINGA : SECTION LOGOS (réduit + recentré) ===== */
+/*
+.section-logos {
+  background-color: #F3E8CC;
+  padding: 3rem 4rem;
+}
+
+.logos-composition {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.logo-item {
+  margin: 0;
+}
+
+.logo-item img {
+  width: 220px;
+  height: auto;
+}
+
+.logo-final {
+  width: 160px;
+  height: auto;
+}
+
+/* ===== AINGA : SECTION VISUELS (kakemono / tshirt / flyer) ===== 
+.section-visuels {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  min-height: 0;
+}
+
+.visuel-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 2rem;
+  min-height: 400px;
+}
+
+.visuel-item img {
+  max-width: 80%;
+  max-height: 380px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.fond-bleu { background-color: #41C8F4; }
+.fond-creme { background-color: #F3E8CC; }
