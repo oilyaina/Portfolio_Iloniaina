@@ -412,17 +412,17 @@ h2 {
   display: block;
 }
 
-/* ===== AA : SECTION LOGOS ===== */
+/* ===== AINGA : SECTION LOGOS (réduit + recentré) ===== */
 .section-logos {
   background-color: #F3E8CC;
-  padding: 4rem 6rem;
+  padding: 3rem 4rem;
 }
 
 .logos-composition {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5rem;
+  gap: 4rem;
 }
 
 .logo-item {
@@ -430,35 +430,37 @@ h2 {
 }
 
 .logo-item img {
-  width: 320px;
-  height: auto;
-}
-
-.logo-final {
   width: 220px;
   height: auto;
 }
 
-/* ===== AA : SECTION VISUELS (kakemono / tshirt / flyer) ===== */
+.logo-final {
+  width: 160px;
+  height: auto;
+}
+/* ===== AINGA : SECTION VISUELS (kakemono / tshirt / flyer) ===== */
 .section-visuels {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
-  min-height: 520px;
+  min-height: 0;
 }
 
 .visuel-item {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
-  min-height: 520px;
+  padding: 3rem 2rem;
+  min-height: 400px;
 }
 
 .visuel-item img {
-  max-width: 100%;
-  max-height: 480px;
+  max-width: 80%;
+  max-height: 380px;
+  width: auto;
+  height: auto;
   object-fit: contain;
+  display: block;
 }
 
 .fond-bleu { background-color: #41C8F4; }
@@ -683,7 +685,7 @@ h2 {
   pointer-events: all;
 }
 
-/* ===== MODAL MENTIONS LÉGALES ===== */
+/* ===== MENTIONS LÉGALES ===== */
 .modal {
   position: fixed;
   inset: 0;
@@ -853,58 +855,4 @@ footer p {
   justify-content: center;
 }
 
-/* ===== AINGA : SECTION LOGOS (réduit + recentré) ===== */
-/*
-.section-logos {
-  background-color: #F3E8CC;
-  padding: 3rem 4rem;
-}
 
-.logos-composition {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 4rem;
-}
-
-.logo-item {
-  margin: 0;
-}
-
-.logo-item img {
-  width: 220px;
-  height: auto;
-}
-
-.logo-final {
-  width: 160px;
-  height: auto;
-}
-
-/* ===== AINGA : SECTION VISUELS (kakemono / tshirt / flyer) ===== 
-.section-visuels {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 100%;
-  min-height: 0;
-}
-
-.visuel-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 3rem 2rem;
-  min-height: 400px;
-}
-
-.visuel-item img {
-  max-width: 80%;
-  max-height: 380px;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  display: block;
-}
-
-.fond-bleu { background-color: #41C8F4; }
-.fond-creme { background-color: #F3E8CC; }
