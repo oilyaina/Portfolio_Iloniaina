@@ -278,3 +278,12 @@ document.querySelector("#close-mentions").addEventListener("click", fermerModal)
 modal.addEventListener("click", (e) => {
   if (e.target === modal) fermerModal();
 });
+
+// ===== NAVIGATION PORTE-CLÉS =====
+document.querySelectorAll(".keychain-item").forEach(item => {
+  item.addEventListener("click", () => {
+    const cible = item.getAttribute("data-target");
+    const section = document.querySelector("#" + cible);
+    if (section) section.scrollIntoView({ behavior: "smooth" });
+  });
+});

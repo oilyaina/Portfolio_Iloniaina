@@ -869,4 +869,93 @@ footer p {
   justify-content: center;
 }
 
+/* ===== HERO ===== */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: 5rem;
+  gap: 4rem;
+}
 
+/* ===== PORTE-CLÉS ===== */
+.keychain-nav {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+.keychain-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+/* Le halo jaune derrière */
+.keychain-halo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: 120%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 202, 38, 0.5) 0%, rgba(255, 202, 38, 0) 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.keychain-item:hover .keychain-halo {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.15);
+}
+
+/* Le porte-clé lui-même */
+.keychain-img {
+  width: 180px;
+  height: auto;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease;
+  transform-origin: top center;
+}
+
+.keychain-item:hover .keychain-img {
+  animation: balancement 0.4s ease;
+}
+
+@keyframes balancement {
+  0%   { transform: rotate(0deg); }
+  25%  { transform: rotate(-6deg); }
+  75%  { transform: rotate(6deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* Label sous le porte-clé */
+.keychain-label {
+  font-family: Figtree, sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #FFCA26;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.keychain-item:hover .keychain-label {
+  opacity: 1;
+  transform: translateY(0);
+}
