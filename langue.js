@@ -43,7 +43,19 @@ const langues = {
     contactDesc: "Mon profil vous intéresse ? <br> Contactez-moi pour donner vie à votre projet.",
     contactLinkedin: "LinkedIn",
     contactCV: "Mon CV",
-    contactEmail: "E-mail"
+    contactEmail: "E-mail",
+
+    menuAbout: "À propos de moi",
+    menuProjets: "Projets",
+    menuContact: "Contact",
+    menuMentions: "Mentions légales",
+    footerLicence: "© 2026 Iloniaina Ratsimbazafy — Tous droits réservés",
+    mentionsTitle: "Mentions légales",
+    mentionsEditeur: "Éditeur : Iloniaina Ratsimbazafy",
+    mentionsContact: "Contact : iloniainaratsimbazafy@gmail.com",
+    mentionsHebergeur: "Hébergeur : À compléter",
+    mentionsPropriete: "Propriété intellectuelle : L'ensemble des contenus de ce portfolio (textes, images, visuels) est la propriété exclusive d'Iloniaina Ratsimbazafy, sauf mention contraire.",
+    mentionsDonnees: "Données personnelles : Ce site ne collecte aucune donnée personnelle."
   },
 
   en: {
@@ -90,7 +102,19 @@ const langues = {
     contactDesc: "Interested in my profile? <br> Get in touch to bring your project to life.",
     contactLinkedin: "LinkedIn",
     contactCV: "My CV",
-    contactEmail: "E-mail"
+    contactEmail: "E-mail",
+
+    menuAbout: "About me",
+    menuProjets: "Projects",
+    menuContact: "Contact",
+    menuMentions: "Legal notice",
+    footerLicence: "© 2026 Iloniaina Ratsimbazafy — All rights reserved",
+    mentionsTitle: "Legal notice",
+    mentionsEditeur: "Publisher: Iloniaina Ratsimbazafy",
+    mentionsContact: "Contact: iloniainaratsimbazafy@gmail.com",
+    mentionsHebergeur: "Host: To be completed",
+    mentionsPropriete: "Intellectual property: All content on this portfolio (texts, images, visuals) is the exclusive property of Iloniaina Ratsimbazafy, unless otherwise stated.",
+    mentionsDonnees: "Personal data: This site does not collect any personal data.",
   }
 };
 
