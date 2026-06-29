@@ -412,60 +412,74 @@ h2 {
   display: block;
 }
 
-/* ===== AINGA : SECTION LOGOS (réduit + recentré) ===== */
+/* ===== AINGA : SECTION PRINCIPALE ===== */
 .section-logos {
   background-color: #F3E8CC;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
   padding: 3rem 4rem;
+  box-sizing: border-box;
 }
 
+/* ===== LOGOS ===== */
 .logos-composition {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 4rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
 }
 
-.logo-item {
-  margin: 0;
-}
-
-.logo-item img {
-  width: 220px;
-  height: auto;
-}
-
+.logo-item,
 .logo-final {
-  width: 160px;
-  height: auto;
+  flex: 1 1 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-/* ===== AINGA : SECTION VISUELS (kakemono / tshirt / flyer) ===== */
+
+.logo-item img,
+.logo-final img {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  display: block;
+}
+
+/* ===== VISUELS COLLÉS ===== */
 .section-visuels {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
   width: 100%;
-  min-height: 0;
+  box-sizing: border-box;
 }
 
 .visuel-item {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3rem 2rem;
-  min-height: 400px;
+  padding: 1.5rem;
+  min-height: 300px;
+  box-sizing: border-box;
 }
 
 .visuel-item img {
-  max-width: 80%;
-  max-height: 380px;
-  width: auto;
-  height: auto;
+  width: 100%;
+  max-width: 100%;
+  max-height: 320px;
   object-fit: contain;
   display: block;
 }
 
-.fond-bleu { background-color: #41C8F4; }
-.fond-creme { background-color: #F3E8CC; }
+.fond-bleu {
+  background-color: #41C8F4;
+}
 
+.fond-creme {
+  background-color: #F3E8CC;
+}
 /* ===== GVT : INTRO (phone + post) ===== */
 .project-image-section-visuel-intro {
   width: 100%;
