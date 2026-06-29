@@ -55,7 +55,8 @@ const langues = {
     mentionsContact: "Contact : iloniainaratsimbazafy@gmail.com",
     mentionsHebergeur: "Hébergeur : À compléter",
     mentionsPropriete: "Propriété intellectuelle : L'ensemble des contenus de ce portfolio (textes, images, visuels) est la propriété exclusive d'Iloniaina Ratsimbazafy, sauf mention contraire.",
-    mentionsDonnees: "Données personnelles : Ce site ne collecte aucune donnée personnelle."
+    mentionsDonnees: "Données personnelles : Ce site ne collecte aucune donnée personnelle.",
+    creditDeveloppement:"Crédit développement : Le développement du site a été assisté par des outils d’IA. Entre autres Perplexity et Claude."
   },
 
   en: {
@@ -115,6 +116,7 @@ const langues = {
     mentionsHebergeur: "Host: To be completed",
     mentionsPropriete: "Intellectual property: All content on this portfolio (texts, images, visuals) is the exclusive property of Iloniaina Ratsimbazafy, unless otherwise stated.",
     mentionsDonnees: "Personal data: This site does not collect any personal data.",
+    creditDeveloppement: "Development Credits: The development of this site was supported by AI tools, including Perplexity and Claude."
   }
 };
 
