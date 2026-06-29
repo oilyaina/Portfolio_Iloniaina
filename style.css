@@ -1,0 +1,795 @@
+.encart {
+  position: relative;
+  padding: 2rem 2.5rem; /* espace intérieur pour que le texte ne colle pas aux bords */
+}
+
+.encart-apropos {
+  background-image: url('Media files/Encart à propos.png');
+  background-size: 100% 100%; /* étire l'image pour couvrir toute la div */
+  background-repeat: no-repeat;
+  min-height: 200px; /* ajuste selon la forme */
+}
+
+.encart-categorie {
+  background-image: 
+    url('Media files/encart btn.png');
+  background-size: 100% 100%, auto;
+  background-repeat: no-repeat, repeat;
+  display: inline-block; /* pour que l'encart épouse la taille du bouton */
+}
+
+/* Important : enlève le style par défaut du bouton pour qu'il ne double pas l'encart */
+.encart-categorie .category-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: Figtree;
+}
+
+.project-categories,
+.project-previews {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project-previews .project-card {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.encart-brief {
+  background-image: url('Media files/encart brief.png');
+  background-size: 100% 100%; /* étire l'image pour couvrir toute la div */
+  background-repeat: no-repeat;
+  min-height: 300px; /* ajuste selon la forme */
+}
+.project-text {
+    transform: rotate(-4.45deg);
+    text-align: justify;
+    padding:10%;
+}
+
+/* --- Section logos projet Ainga sy Ako --- */
+.section-logos {
+  padding: 4rem 2rem;
+  background-color: #F3E8CC;
+}
+
+.logos-composition {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.logo-item {
+  margin: 0;
+}
+
+.logo-item img {
+  width: 300px; /* ajuste selon la taille de ton image de décomposition */
+  height: auto;
+}
+
+.logo-final {
+  width: 200px; /* ajuste selon la taille de ton logo */
+  height: auto;
+}
+
+/* --- Section visuels du projet AA --- */
+.section-visuels {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  min-height: 500px;
+}
+
+.visuel-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.visuel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.fond-creme {
+  background-color: #F3E8CC;
+}
+
+.contact-btn{
+  text-decoration: none;
+  color: inherit;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+  background-color: #2D643E;
+  background-image: url("Media files/Fond portfolio.png");
+  background-repeat: repeat;
+  background-position: top left;
+  background-attachment: fixed;
+}
+
+h1, h2 {
+  font-family: Barrio;
+  color: #FFCA26;
+  text-align: center;
+}
+
+body {
+    font-family: Figtree;
+}
+
+h1 {
+    text-align: center;
+    font-size: clamp(3rem, 10vw, 150px);
+}
+
+h2 {
+    font-size: clamp(3rem, 10vw, 100px);
+}
+/* ===== A PROPOS ===== */
+.about {
+  padding: 0 4rem 4rem;
+  position: relative;
+}
+
+/* Titre h2 aligné à droite de la photo */
+.about > h2 {
+  text-align: left;
+  padding-left: calc(38% + 3rem);
+  margin: 0 0 1rem 0;
+}
+
+/* Grille principale : photo | contenu */
+.about-grid {
+  display: grid;
+  grid-template-columns: 38% 1fr;
+  gap: 0 3rem;
+  align-items: start;
+}
+
+/* Photo déborde vers le bas */
+.about-photo-wrap {
+  position: relative;
+  align-self: start;
+}
+
+.about-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 520px;
+}
+
+/* Colonne droite : encart + colonnes */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding-top: 0;
+}
+
+/* Encart présentation */
+.encart-apropos {
+  background-image: url('Media files/Encart à propos.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  min-height: 200px;
+  padding: 2.5rem 3rem;
+}
+
+.encart-apropos p {
+  color: #3a2a0a;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+  text-align: center;
+}
+
+/* Deux colonnes : exp+formation | compétences+savoir-être+langues */
+.about-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem 3rem;
+  align-items: start;
+}
+
+/* Tous les blocs en colonne */
+.about-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+/* Badge titre */
+.about-block dt {
+  display: inline-flex;
+  align-self: flex-start;
+  background: #f5c400;
+  color: #355f38;
+  font-family: "Figtree", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 10px;
+  padding: 0.5rem 1.4rem;
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+.about-block dd {
+  margin: 0;
+}
+
+.about-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #f4e9d2;
+  font-family: "Figtree", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Soft skills : puces visibles */
+#block-soft-skills ul {
+  list-style: disc;
+  padding-left: 1.2rem;
+}
+
+.about-block li {
+  margin-bottom: 0.7rem;
+}
+
+.about-block strong {
+  color: #f5c400;
+  font-weight: 700;
+}
+
+/* Placement en grille */
+#block-exp       { grid-column: 1; grid-row: 1; }
+#block-formation { grid-column: 1; grid-row: 2; }
+#block-hard-skills { grid-column: 2; grid-row: 1; }
+#block-soft-skills { grid-column: 2; grid-row: 2; }
+#block-langues     { grid-column: 2; grid-row: 3; }
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .about > h2 {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-photo {
+    max-width: 380px;
+    margin: 0 auto;
+  }
+
+  .about-columns {
+    grid-template-columns: 1fr;
+  }
+
+  #block-exp, #block-formation,
+  #block-hard-skills, #block-soft-skills, #block-langues {
+    grid-column: 1;
+    grid-row: auto;
+  }
+}
+/* Projets */ 
+.project-categories{
+    column-count: 3;
+    display:flex;
+    justify-content: space-around;
+}
+
+.project-main {
+    column-count: 2;
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-image-section-visuel-intro{
+    column-count: 2;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+/* ===== BANNIÈRE DÉFILANTE ===== */
+.project-banner {
+  background-color: #FFCA26;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0.6rem 0;
+}
+
+.banner-track {
+  display: inline-flex;
+  gap: 4rem;
+  animation: defilement 12s linear infinite;
+}
+
+.banner-track span {
+  font-family: Figtree, sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #2D643E;
+}
+
+@keyframes defilement {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* ===== PROJECT MAIN (image + encart) ===== */
+.project-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 4rem;
+  min-height: 500px;
+}
+
+.project-preview-img {
+  width: 40%;
+  max-width: 480px;
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.encart-brief {
+  background-image: url('Media files/encart brief.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  min-height: 300px;
+  width: 45%;
+  flex-shrink: 0;
+}
+
+.project-text {
+  transform: rotate(-4.45deg);
+  text-align: justify;
+  padding: 10%;
+  color: #3a2a0a;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.project-text h3 {
+  font-family: Figtree, sans-serif;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== SECTIONS IMAGES GÉNÉRIQUES (pleine largeur, scroll reveal) ===== */
+.project-image-section {
+  width: 100%;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.project-image-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-image-section figure,
+.project-image-section div {
+  margin: 0;
+}
+
+.project-image-section img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===== AA : SECTION LOGOS ===== */
+.section-logos {
+  background-color: #F3E8CC;
+  padding: 4rem 6rem;
+}
+
+.logos-composition {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.logo-item {
+  margin: 0;
+}
+
+.logo-item img {
+  width: 320px;
+  height: auto;
+}
+
+.logo-final {
+  width: 220px;
+  height: auto;
+}
+
+/* ===== AA : SECTION VISUELS (kakemono / tshirt / flyer) ===== */
+.section-visuels {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  min-height: 520px;
+}
+
+.visuel-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  min-height: 520px;
+}
+
+.visuel-item img {
+  max-width: 100%;
+  max-height: 480px;
+  object-fit: contain;
+}
+
+.fond-bleu { background-color: #41C8F4; }
+.fond-creme { background-color: #F3E8CC; }
+
+/* ===== GVT : INTRO (phone + post) ===== */
+.project-image-section-visuel-intro {
+  width: 100%;
+  padding: 4rem 6rem;
+  background-color: #2D643E;
+}
+
+.intro-visuel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.intro-item {
+  margin: 0;
+}
+
+.intro-item img {
+  width: 280px;
+  height: auto;
+}
+
+.intro-visuel .logo-final {
+  width: 380px;
+  height: auto;
+}
+
+/* ===== GVT : FEED INSTAGRAM ===== */
+.section-visuel-feed {
+  width: 100%;
+  padding: 0;
+}
+
+.feed-visuel {
+  width: 100%;
+}
+
+.feed-item {
+  margin: 0;
+  width: 100%;
+}
+
+.feed-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===== AN et DOCU : toutes les sections visuelles pleine largeur ===== */
+.section-visuel-accueil,
+.section-visuel-nav,
+.section-visuel-carnet,
+.section-visuel-db-carnet,
+.section-visuel-photo-carnet,
+.section-visuel-frise,
+.section-visuel-accueil-docu,
+.section-visuel-perso-docu,
+.section-visuel-plateau-docu,
+.section-visuel-capsule-docu,
+.section-visuel-fiches-docu,
+.section-visuel-lieu-docu {
+  width: 100%;
+  padding: 0;
+}
+
+.accueil-visuel, .nav-visuel, .carnet-visuel,
+.db-carnet-visuel, .photo-carnet-visuel, .frise-visuel,
+.accueil-docu-visuel, .perso-docu-visuel, .plateau-docu-visuel,
+.capsule-docu-visuel, .fiches-docu-visuel, .lieu-docu-visuel {
+  width: 100%;
+}
+
+.accueil-item, .nav-item, .carnet-item,
+.db-carnet-item, .photo-carnet-item,
+.accueil-docu-item, .perso-docu-item, .plateau-docu-item,
+.capsule-docu-item, .fiches-docu-item, .lieu-docu-item {
+  margin: 0;
+  width: 100%;
+}
+
+/* ===== NAVIGATION PROJET (boutons retour / suivant) ===== */
+.project-nav {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 3rem 2rem;
+}
+
+.btn-retour,
+.btn-suivant {
+  background-image: url('Media files/encart btn.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: Figtree, sans-serif;
+  font-size: 0.95rem;
+  padding: 0.8rem 2rem;
+  color: inherit;
+}
+
+/* ===== TOPBAR ===== */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: transparent;
+}
+
+#burger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+  color: #FFCA26;
+  z-index: 200;
+}
+
+.lang-switch {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.lang-switch button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: Figtree, sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #FFCA26;
+}
+
+.lang-switch button:hover {
+  text-decoration: underline;
+}
+
+/* ===== MENU BURGER ===== */
+.burger-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 100vh;
+  background-color: #1a3d26;
+  z-index: 150;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem 2.5rem;
+  gap: 2rem;
+  transform: translateX(-100%);
+  transition: transform 0.35s ease;
+  box-shadow: 4px 0 20px rgba(0,0,0,0.3);
+}
+
+.burger-menu.open {
+  transform: translateX(0);
+}
+
+.burger-menu a {
+  font-family: Figtree, sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #FFCA26;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  transition: color 0.2s ease;
+}
+
+.burger-menu a:hover {
+  color: #ffffff;
+}
+
+/* Bouton mentions légales dans le menu */
+.burger-menu button.mentions-link {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: Figtree, sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #FFCA26;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  text-align: left;
+  padding: 0;
+  transition: color 0.2s ease;
+}
+
+.burger-menu button.mentions-link:hover {
+  color: #ffffff;
+}
+
+/* Overlay sombre derrière le menu */
+.burger-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 140;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+}
+
+.burger-overlay.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* ===== MODAL MENTIONS LÉGALES ===== */
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.6);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.modal.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-content {
+  background: #f5f0e0;
+  color: #2D643E;
+  font-family: Figtree, sans-serif;
+  border-radius: 8px;
+  padding: 2.5rem 3rem;
+  max-width: 560px;
+  width: 90%;
+  position: relative;
+  line-height: 1.6;
+}
+
+.modal-content h3 {
+  font-family: Barrio, sans-serif;
+  color: #2D643E;
+  margin: 0 0 1rem 0;
+  font-size: 2rem;
+}
+
+.modal-content p {
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.2rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #2D643E;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #1a3d26;
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+footer p {
+  color: #f4e9d2;
+  font-family: Figtree, sans-serif;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links a {
+  color: #FFCA26;
+  font-family: Figtree, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-mentions {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #FFCA26;
+  font-family: Figtree, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0;
+}
+
+.footer-mentions:hover {
+  text-decoration: underline;
+}

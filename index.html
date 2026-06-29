@@ -1,19 +1,518 @@
 <!DOCTYPE html>
-     <html lang="en">
-     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio CMW</title>
-        <link rel="stylesheet" href="style.css">
-     </head>
-     <body>
-        <button id= "btn1" > FR </button>
-        <button id= "btn2" > EN </button>
-        <h1 id="titrePage"></h1>
-        <h2 id="accroche"></h2>
-        <h3 id="presentation"></h2>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barrio&display=swap"rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-  
-    </body>
-      <script src="langue.js"></script>
-     </html>
+  <header id="accueil">
+  <nav class="topbar" aria-label="Navigation principale">
+    <button id="burger" type="button" aria-label="Ouvrir le menu">☰</button>
+    <div class="lang-switch">
+      <button id="btn-fr" type="button">FR</button>
+      <button id="btn-en" type="button">EN</button>
+    </div>
+  </nav>
+
+  <!-- Menu burger -->
+  <div class="burger-overlay" id="burger-overlay"></div>
+  <nav class="burger-menu" id="burger-menu" aria-label="Menu principal">
+    <a href="#a-propos" data-i18n="menuAbout">À propos de moi</a>
+    <a href="#projets" data-i18n="menuProjets">Projets</a>
+    <a href="#contact" data-i18n="menuContact">Contact</a>
+    <button class="mentions-link" id="open-mentions" data-i18n="menuMentions">Mentions légales</button>
+  </nav>
+
+      <div class="hero">
+         <h1 id="titrePage" data-i18n="titrePage">Portfolio</h1>
+      </div>
+   </header>
+  <main>
+
+    <section id="a-propos" class="about">
+      <h2 data-i18n="aboutTitle">À propos de moi</h2>
+
+      <div class="about-grid">
+
+         <div class="about-photo-wrap">
+            <img src="Media files/Photo Iloniaina.png" alt="Photo de Iloniaina Ratsimbazafy" class="about-photo">
+         </div>
+
+         <div class="about-content">
+
+            <div class="encart encart-apropos">
+            <div class="presentation">
+               <p data-i18n="presentation">Je m'appelle Iloniaina Ratsimbazafy et je me forme actuellement au métier de cheffe de projet digital. Curieuse et polyvalente, j'ai choisi de me réorienter vers le numérique afin de transformer cette diversité d'intérêts en véritable atout. De l'analyse des besoins à la conception UX/UI, je prends plaisir à piloter des projets dans leur globalité et à en comprendre chaque étape. À l'issue de mon parcours, je souhaite évoluer à l'interface entre enjeux métier et solutions techniques, en tant que cheffe de projet informatique.</p>
+            </div>
+            </div>
+
+            <div class="about-columns">
+
+            <div class="about-block" id="block-exp">
+               <dt data-i18n="expTitle">Expérience</dt>
+               <dd>
+                  <ul>
+                  <li><strong>Oct. 2025 – Juin 2026</strong><br>Chef de projet & Responsable UX/UI<br><em>Archives nationales</em></li>
+                  <li><strong>Oct. 2025 – Juin 2026</strong><br>Chef de projet Webdocumentaire franco-coréen<br><em>Université Gustave Eiffel x Dong Eui</em></li>
+                  <li><strong>Depuis jan. 2023</strong><br>Présidente & Responsable communication<br><em>Za koa Hanorina</em></li>
+                  </ul>
+               </dd>
+            </div>
+
+            <div class="about-block" id="block-hard-skills">
+               <dt data-i18n="hardSkillsTitle">Compétences techniques</dt>
+               <dd>
+                  <ul>
+                  <li>Figma</li>
+                  <li>Illustrator · Photoshop · InDesign (notions)</li>
+                  <li>HTML / CSS · PHP · JS (notions)</li>
+                  <li>Gestion de projet agile · Scrum · Kanban</li>
+                  </ul>
+               </dd>
+            </div>
+
+            <div class="about-block" id="block-formation">
+               <dt data-i18n="formationTitle">Formation</dt>
+               <dd>
+                  <ul>
+                  <li>Master Cultures et Métiers du Web<br><em>Université Gustave Eiffel</em></li>
+                  <li>Double licence Droit-Économie<br><em>Université Panthéon Sorbonne</em></li>
+                  </ul>
+               </dd>
+            </div>
+
+            <div class="about-block" id="block-soft-skills">
+               <dt data-i18n="softSkillsTitle">Savoir-être</dt>
+               <dd>
+                  <ul>
+                  <li>Capacité d'analyse et de synthèse</li>
+                  <li>Proactivité et attention aux détails</li>
+                  <li>Esprit d'équipe et communication interpersonnelle</li>
+                  </ul>
+               </dd>
+            </div>
+
+            <div class="about-block" id="block-langues">
+               <dt data-i18n="languesTitle">Langues</dt>
+               <dd>
+                  <ul>
+                  <li>Français</li>
+                  <li>Anglais B2</li>
+                  </ul>
+               </dd>
+            </div>
+
+            </div>
+         </div>
+      </div>
+    </section>
+
+    <section id="projets" class="project">
+      <h2 data-i18n="projetsTitle">Projets</h2>
+
+      <ul class="project-categories">
+
+        <li class="categorie-item">
+          <div class="encart encart-categorie">
+          <button type="button" class="category-btn" data-category="identite" data-i18n="catIdentite">
+            Identité visuelle
+          </button>
+          </div>
+          <ul class="project-previews">
+            <li>
+              <button type="button" class="project-card" data-project="projet1">
+                <img src="Media files/preview_AA.png" alt="Ainga sy Ako">
+              </button>
+            </li>
+          </ul>
+        </li>
+
+        <li class="categorie-item">
+           <div class="encart encart-categorie">
+          <button type="button" class="category-btn" data-category="communication" data-i18n="catCommunication">
+            Communication
+          </button>
+          </div>
+          <ul class="project-previews">
+            <li>
+              <button type="button" class="project-card" data-project="projet2">
+                <img src="Media files/Preview_gvt.png" alt="Gasy vao tonga">
+              </button>
+            </li>
+          </ul>
+        </li>
+
+        <li class="categorie-item">
+          <div class="encart encart-categorie">
+          <button type="button" class="category-btn" data-category="gestion" data-i18n="catGestion">
+            Gestion de projets
+          </button>
+          </div>
+          <ul class="project-previews">
+            <li>
+              <button type="button" class="project-card" data-project="projet3">
+                <img src="Media files/preview_AN.png" alt="Archives nationales">
+              </button>
+            </li>
+            <li>
+              <button type="button" class="project-card" data-project="projet4">
+                <img src="Media files/preview_docu.png" alt="Webdocumentaire">
+              </button>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <section id="projet-detail" class="project-detail">
+
+      <!-- FICHE PROJET 1 : Ainga sy Ako -->
+      <article class="project-fiche" id="fiche-ainga" hidden>
+
+         <!-- Bannière défilante -->
+         <div class="project-banner">
+            <div class="banner-track">
+            <span data-i18n="catIdentite">Identité visuelle</span>
+            <span data-i18n="catIdentite">Identité visuelle</span>
+            <span data-i18n="catIdentite">Identité visuelle</span>
+            <span data-i18n="catIdentite">Identité visuelle</span>
+            <span data-i18n="catIdentite">Identité visuelle</span>
+            <span data-i18n="catIdentite">Identité visuelle</span>
+            
+            </div>
+         </div>
+
+         <!-- Contenu principal -->
+         <div class="project-main">
+            <img src="Media files/AA.png" alt="Aperçu Ainga sy Ako" class="project-preview-img">
+            <div class="encart encart-brief">
+               <div class="project-text">
+                  <h3 data-i18n="projet1">Ainga sy Ako</h3>
+                  <p data-i18n="projet1-desc">Ainga & Ako est un dispositif d'enquêtes menées auprès des membres de la diaspora malagasy et des associations engagées pour Madagascar. Il est coordonné et supervisé par des chercheurs de l'Institut de Recherche pour le Développement (IRD) et mené sur le terrain par différentes associations partenaires dont l'association Za koa Hanorina, responsable des enquêtes dans la région île de France.<br>
+                  J'ai participé à la création des logos des enquêtes ainsi qu'à l'élaboration de la charte graphique. J'ai également contribué à la réalisation des affiches et flyers repris par les associations relais et le kakemono qui a été utilisé lors des événements diasporiques.
+                  </p>
+               </div>
+            </div>
+         </div>
+
+         <!-- Images du projet -->
+         <div class="project-images">
+         <!-- Section 1 Logo -->
+         <div class="project-image-section section-logos">
+            <div class="logos-composition">
+               <figure class="logo-item">
+               <img src="Media files/Decomp logo.png" alt="Silhouette et ravinala">
+               </figure>
+               <img src="Media files/Logo AAnew.png" alt="Logo Ainga & Ako" class="logo-final">
+            </div>
+         </div>
+
+         <!-- Section 3 Visuels projet -->
+          <div class="project-image-section section-visuels">
+
+            <div class="visuel-item fond-bleu">
+               <img src="Media files/kakemono.png" alt="Kakemono Ainga & Ako">
+            </div>
+
+            <div class="visuel-item fond-bleu">
+               <img src="Media files/t-shirt.png" alt="T-shirt Ainga & Ako">
+            </div>
+
+            <div class="visuel-item fond-creme">
+               <img src="Media files/flyer.png" alt="Flyers Ainga & Ako">
+            </div>
+
+         </div>
+
+         </div>
+
+         <!-- Navigation -->
+         <nav class="project-nav">
+            <button type="button" class="btn-retour" data-i18n="btnRetour">← Retour aux projets</button>
+            <button type="button" class="btn-suivant" data-target="fiche-gasy" data-i18n="btnSuivant">Projet suivant →</button>
+         </nav>
+
+      </article>
+
+      <!-- FICHE PROJET 2 : Gasy vao tonga -->
+      <article class="project-fiche" id="fiche-gasy" hidden>
+
+         <div class="project-banner">
+            <div class="banner-track">
+            <span data-i18n="catCommunication">Communication</span>
+            <span data-i18n="catCommunication">Communication</span>
+            <span data-i18n="catCommunication">Communication</span>
+            <span data-i18n="catCommunication">Communication</span>
+            <span data-i18n="catCommunication">Communication</span>
+            <span data-i18n="catCommunication">Communication</span>
+            </div>
+         </div>
+
+         <div class="project-main">
+            <img src="Media files/gvt.png" alt="Aperçu Gasy vao tonga" class="project-preview-img">
+            <div class="encart encart-brief">
+               <div class="project-text">
+               <h3 data-i18n="projet2">Gasy vao tonga</h3>
+               <p data-i18n="projet2-desc">Gasy vao tonga est l’un des pôles d’action de l’association Za koa Hanorina, qui se concentre sur l’accueil des étudiants malgaches qui viennent d’arriver en France. Les principaux évènements organisés sont des ateliers administratifs, mais également des évènements de réseautage entre les étudiants et des professionnels issues de la diaspora malgache.Le pôle dispose d’une page instagram consacrée à la promotion de ces évènements, ainsi qu’occasionnellement des posts de tips à destination des étudiants.<br>
+                  J’ai participé à la refonte de l’identité visuelle du pôle et je suis responsable de la ligne éditoriale de la page. Je crée et rédige notamment les posts qui sont publiés sur les réseaux sociaux. 
+                  </p>
+               </div>
+            </div>
+         </div>
+
+         <!-- Images du projet GVT -->
+         <div class="project-images">
+         <!-- Section 1 introduction au projet -->
+         <div class="project-image-section-visuel-intro">
+            <div class="intro-visuel">
+               <figure class="intro-item">
+               <img src="Media files/PHONE 1.png" alt="Aperçu compte instagram Gasy vao Tonga sur Instagram">
+               </figure>
+               <img src="Media files/Instagram Post Mockup.png" alt="Aperçu post Gasy Vao Tonga" class="logo-final">
+            </div>
+         </div>
+         <!-- Section 2 feed instagram -->
+         <div class="project-image-section section-visuel-feed">
+            <div class="feed-visuel">
+               <figure class="feed-item">
+               <img src="Media files/Instagram Post Mockup - Template 1.png" alt="aperçu feed de la page Gasy Vao Tonga sur Instagram">
+               </figure>
+            </div>
+         </div>
+
+         </div> <!-- ferme project-images -->
+
+         <nav class="project-nav">
+            <button type="button" class="btn-retour" data-i18n="btnRetour">← Retour aux projets</button>
+            <button type="button" class="btn-suivant" data-target="fiche-archives" data-i18n="btnSuivant">Projet suivant →</button>
+         </nav>
+
+      </article> <!-- ferme fiche-gasy -->
+
+      <!-- FICHE PROJET 3 : Archives nationales -->
+      <article class="project-fiche" id="fiche-archives" hidden>
+
+         <div class="project-banner">
+            <div class="banner-track">
+            <span data-i18n="catGestion">Gestion de projets</span>
+            <span data-i18n="catGestion">Gestion de projets</span>
+            <span data-i18n="catGestion">Gestion de projets</span>
+            <span data-i18n="catGestion">Gestion de projets</span>
+            <span data-i18n="catGestion">Gestion de projets</span>
+            <span data-i18n="catGestion">Gestion de projets</span>
+            </div>
+         </div>
+
+         <div class="project-main">
+            <img src="Media files/AN.png" alt="Aperçu Archives nationales" class="project-preview-img">
+            <div class="encart encart-brief">
+               <div class="project-text">
+               <h3 data-i18n="projet3">Archives nationales</h3>
+               <p data-i18n="projet3-desc">Dans le cadre de l'entrée dans le domaine public des carnets photographiques de Robert Capa, Gerda Taro et Chim, les Archives nationales ont commandé la conception d'un site web et d'une application offline pour accompagner leur exposition temporaire. Les 4 600 photographies des carnets restant inaccessibles au public, l'objectif était d'offrir aux visiteurs une expérience de navigation enrichie : par l'objet carnet, les clichés, les photographes, le contexte historique et la localisation des prises de vue.<br>
+                  J'ai piloté ce projet en équipe de 4, dans le cadre de mon master, en cumulant les rôles de cheffe de projet et de responsable UX/UI — du cadrage des besoins et de la constitution du backlog jusqu'aux maquettes Figma et au contrôle qualité des livrables.
+                  </p>
+               </div>
+            </div>
+         </div>
+
+          <!-- Images du projet Archives nationales -->
+         <div class="project-images">
+      <!-- Section 1 Accueil -->
+         <div class="project-image-section section-visuel-accueil">
+            <div class="accueil-visuel">
+               <figure class="accueil-item">
+               <img src="Media files/accueil AN.png" alt="Aperçu accueil site exposition des archives nationales">
+               </figure>
+            </div>
+         </div>
+         <!-- Section 2 Navigation AN  -->
+         <div class="project-image-section section-visuel-nav">
+            <div class="nav-visuel">
+               <figure class="nav-item">
+               <img src="Media files/Navigation AN.png" alt="Aperçu mode de navigation site exposition des archives nationales">
+               </figure>
+            </div>
+         </div>
+         <!-- Section 3 Carnet  -->
+         <div class="project-image-section section-visuel-carnet">
+            <div class="carnet-visuel">
+               <figure class="carnet-item">
+               <img src="Media files/Carnet ouverture AN.png" alt="Aperçu de l'ouverture d'un carnet">
+               </figure>
+            </div>
+         </div>
+         <!-- Section 4 Double page d'un carnet -->
+         <div class="project-image-section section-visuel-db-carnet">
+            <div class="db-carnet-visuel">
+               <figure class="db-carnet-item">
+               <img src="Media files/Carnet db page AN.png" alt="Aperçu d'une double page d'un carnet">
+               </figure>
+            </div>
+         </div>
+         <!-- Section 5 Photo  -->
+         <div class="project-image-section section-visuel-photo-carnet">
+            <div class="photo-carnet-visuel">
+               <figure class="photo-carnet-item">
+               <img src="Media files/photo carnet AN.png" alt="Aperçu photo dans le carnet">
+               </figure>
+            </div>
+         </div>
+         <!-- Section 2 Frise chronologique -->
+         <div class="project-image-section section-visuel-frise">
+            <div class="frise-visuel">
+               <figure class="frise-visuel">
+               <img src="Media files/Frise AN.png" alt="Aperçu du mode de navigation par frise chronologique">
+               </figure>
+            </div>
+         </div>
+
+         <nav class="project-nav">
+            <button type="button" class="btn-retour" data-i18n="btnRetour">← Retour aux projets</button>
+            <button type="button" class="btn-suivant" data-target="fiche-webdoc" data-i18n="btnSuivant">Projet suivant →</button>
+         </nav>
+
+      </article>
+
+      <!-- FICHE PROJET 4 : Webdocumentaire -->
+      <article class="project-fiche" id="fiche-webdoc" hidden>
+
+         <div class="project-banner">
+            <div class="banner-track">
+            <span data-i18n="catGestion">Gestion de projets</span>
+            <span data-i18n="catGestion">Gestion de projets</span>
+            <span data-i18n="catGestion">Gestion de projets</span>
+            </div>
+         </div>
+
+         <div class="project-main">
+            <img src="Media files/Webdocu.png" alt="Aperçu Webdocumentaire" class="project-preview-img">
+            <div class="encart encart-brief">
+               <div class="project-text">
+               <h3 data-i18n="projet4">Webdocumentaire</h3>
+               <p data-i18n="projet4-desc">Quand la Corée joue est un webdocumentaire explorant les pratiques de jeux de la société coréenne à travers les générations, ancré dans la ville de Busan. Réalisé en collaboration avec les étudiants en cinéma de l'Université Dong Eui, le projet a abouti à la fois à un documentaire interactif et à un site web enrichi, autour du thème des traces du passé dans le présent.<br>
+                  J'ai coordonné une équipe franco-coréenne de 13 personnes, en assurant l'interface de communication entre les deux équipes pour aligner les attentes tout au long du projet. J'ai planifié les tournages et suivi l'avancement selon un calendrier de production contraint, élaboré le scénario et articulé le contenu audiovisuel avec l'architecture du site web associé, puis mené l'analyse documentaire et supervisé le rendu final, de l'écriture à la publication web.
+               </p>
+               </div>
+            </div>
+         </div>
+         <div class="project-images">
+         
+        <!-- Section 1 Accueil Noli  -->
+         <div class="project-image-section section-visuel-accueil-docu">
+            <div class="accueil-docu-visuel">
+               <figure class="accueil-docu-item">
+               <img src="Media files/acceuil docu.png" alt="Aperçu accueil du site du webdocumentaire sur les jeux">
+               </figure>
+            </div>
+         </div>
+         <!-- Section 2 Choix personnage -->
+         <div class="project-image-section section-visuel-perso-docu">
+            <div class="perso-docu-visuel">
+               <figure class="perso-docu-item">
+               <img src="Media files/Perso docu.png" alt="Aperçu page de choix des personnages">
+               </figure>
+            </div>
+         </div>
+         <!-- Section 3 Plateau -->
+         <div class="project-image-section section-visuel-plateau-docu">
+            <div class="plateau-docu-visuel">
+               <figure class="plateau-docu-item">
+               <img src="Media files/plateau docu.png" alt="Aperçu plateau de jeu">
+               </figure>
+            </div>
+         </div>
+         <!-- Section 4 Capsuel vidéo  -->
+         <div class="project-image-section section-visuel-capsule-docu">
+            <div class="capsule-docu-visuel">
+               <figure class="capsule-docu-item">
+               <img src="Media files/Capsule docu.png" alt="Aperçu onglet pour regarder une séquence du documentaire">
+               </figure>
+            </div>
+         </div>
+         <!-- Section 5 Fiche de jeux -->
+         <div class="project-image-section section-visuel-fiches-docu">
+            <div class="fiches-docu-visuel">
+               <figure class="fiches-docu-item">
+               <img src="Media files/Fiche de jeux docu.png" alt="Aperçu page des fiches de jeux">
+               </figure>
+            </div>
+         </div>
+         <!-- Section 6 Lieux de jeu  -->
+         <div class="project-image-section section-visuel-lieu-docu">
+            <div class="lieu-docu-visuel">
+               <figure class="lieu-docu-item">
+               <img src="Media files/lieu docu.png" alt="Aperçu page des lieux de jeu">
+               </figure>
+            </div>
+         </div>
+      </div>
+         <nav class="project-nav">
+            <button type="button" class="btn-retour" data-i18n="btnRetour">← Retour aux projets</button>
+            <button type="button" class="btn-suivant" data-target="fiche-ainga" data-i18n="btnSuivant">Projet suivant →</button>
+         </nav>
+
+      </article>
+
+    </section>
+    <section id="contact" class="contact-info">
+      <h2 data-i18n="contactTitle">Contact</h2>
+      <div class="encart encart-apropos">
+         <p data-i18n="contactDesc">
+            Mon profil vous intéresse ? <br> Contactez-moi pour donner vie à votre projet.
+         </p>
+      </div>
+         <div class="contact-actions">
+            <div class="encart encart-categorie">
+               <a class="contact-btn" href="https://www.linkedin.com/in/iloniaina-ratsimbazafy-9939732a1/" target="_blank" rel="noopener noreferrer" data-i18n="contactLinkedin">
+                  LinkedIn 
+               </a>
+            </div>
+            <div class="encart encart-categorie">
+               <a class="contact-btn" href="cv-iloniaina-ratsimbazafy.pdf" download data-i18n="contactCV">
+                  Mon CV
+               </a>
+            </div>
+            <div class="encart encart-categorie">
+               <a class="contact-btn" href="https://mail.google.com/mail/?view=cm&to=iloniainaratsimbazafy@gmail.com&subject=Contact%20via%20portfolio" target="_blank" data-i18n="contactEmail">
+                  E-mail
+               </a>
+            </div>
+         </div>
+    </section>
+  </main>
+
+  <!-- Modal mentions légales -->
+   <div class="modal" id="modal-mentions" role="dialog" aria-modal="true">
+   <div class="modal-content">
+      <button class="modal-close" id="close-mentions" aria-label="Fermer">✕</button>
+      <h3 data-i18n="mentionsTitle">Mentions légales</h3>
+      <p data-i18n="mentionsEditeur"><strong>Éditeur :</strong> Iloniaina Ratsimbazafy</p>
+      <p data-i18n="mentionsContact"><strong>Contact :</strong> iloniainaratsimbazafy@gmail.com</p>
+      <p data-i18n="mentionsHebergeur"><strong>Hébergeur :</strong> À compléter</p>
+      <p data-i18n="mentionsPropriete"><strong>Propriété intellectuelle :</strong> L'ensemble des contenus de ce portfolio (textes, images, visuels) est la propriété exclusive d'Iloniaina Ratsimbazafy, sauf mention contraire.</p>
+      <p data-i18n="mentionsDonnees"><strong>Données personnelles :</strong> Ce site ne collecte aucune donnée personnelle.</p>
+   </div>
+   </div>
+
+<!-- Footer -->
+<footer>
+  <p data-i18n="footerLicence">© 2026 Iloniaina Ratsimbazafy — Tous droits réservés</p>
+  <ul class="footer-links">
+    <li><a href="#a-propos" data-i18n="menuAbout">À propos</a></li>
+    <li><a href="#projets" data-i18n="menuProjets">Projets</a></li>
+    <li><a href="#contact" data-i18n="menuContact">Contact</a></li>
+    <li><button class="footer-mentions" id="open-mentions-footer" data-i18n="menuMentions">Mentions légales</button></li>
+  </ul>
+</footer>
+
+  <script src="langue.js"></script>
+</body>
+</html>
